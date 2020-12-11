@@ -1,0 +1,65 @@
+@import 'public';
+body {
+    min-width: 1200px;
+}
+
+
+/* 版心 */
+
+.wrap {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+
+/* 浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::after {
+    content: '.';
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: visible;
+}
+
+a {
+    color: #5e5e5e;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: #0083ce;
+    }
+}
+
+$font12: 12px;
+$font14: 14px;
+$t_height: 36px;
+%text {
+    font-size: $font12;
+    height: $t_height;
+    line-height: $t_height;
+    color: #5e5e5e;
+    padding: 0 10px;
+}
+
+%outline {
+    &:focus {
+        outline: none;
+    }
+}
+
+@import 'header';
+@import 'banner';
+@import 'footer';

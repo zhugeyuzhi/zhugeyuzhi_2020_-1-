@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input,
+textarea,
+button,
+option,
+select {
+  box-sizing: border-box; }
+
+body {
+  min-width: 1200px; }
+
+/* 版心 */
+.wrap {
+  width: 1190px;
+  margin: 0 auto; }
+
+/* 浮动 */
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/* 清除浮动 */
+.clearfix::after {
+  content: '.';
+  height: 0;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: visible; }
+
+a {
+  color: #5e5e5e;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: #0083ce; }
+
+.header, .header .top-r li, .topsearch .search-wrap .text li {
+  font-size: 12px;
+  height: 36px;
+  line-height: 36px;
+  color: #5e5e5e;
+  padding: 0 10px; }
+
+.topsearch .search-wrap .search-from .search:focus, .topsearch .search-wrap .search-from .searchBtn:focus {
+  outline: none; }
+
+.header {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #e9e9e9; }
+  .header .topnav .top-l div {
+    float: left; }
+  .header .topnav .top-l div:nth-child(1) a {
+    padding-left: 20px;
+    background: url("//s.maiyaole.com/images/201306/images/common_sprite.png") no-repeat -154px -64px; }
+  .header .top-r li {
+    float: left;
+    background-color: #f1f1f1; }
+  .header .top-r .logininfo a:nth-child(1) {
+    color: red; }
+
+.topsearch {
+  height: 121px;
+  margin-bottom: 10px; }
+  .topsearch h1 {
+    margin-right: 105px; }
+    .topsearch h1 .logo {
+      padding-top: 26px;
+      text-indent: -9999px; }
+      .topsearch h1 .logo a {
+        display: block;
+        width: 180px;
+        height: 87px;
+        background: url("//s.maiyaole.com/images/common/logo_01.png") no-repeat center; }
+  .topsearch .search-wrap {
+    width: 765px;
+    height: 106px;
+    margin-bottom: 15px;
+    position: relative; }
+    .topsearch .search-wrap .search-from {
+      width: 532px;
+      margin-top: 34px; }
+      .topsearch .search-wrap .search-from label {
+        position: absolute;
+        left: 0;
+        top: 34px;
+        width: 451px;
+        height: 42px;
+        display: none;
+        background-color: red;
+        border: 1px solid #c7a774; }
+      .topsearch .search-wrap .search-from .search {
+        width: 451px;
+        height: 44px;
+        border: 1px solid #c7a774; }
+      .topsearch .search-wrap .search-from .searchBtn {
+        width: 80px;
+        height: 44px;
+        border: 1px solid #c7a774;
+        background: #fff;
+        position: relative;
+        left: -1px; }
+    .topsearch .search-wrap .text {
+      margin-top: 10px; }
+      .topsearch .search-wrap .text li {
+        line-height: 16px;
+        float: left; }
+  .topsearch .button {
+    box-sizing: border-box;
+    width: 140px;
+    border: 1px solid red; }
+
+/*# sourceMappingURL=index.css.map */

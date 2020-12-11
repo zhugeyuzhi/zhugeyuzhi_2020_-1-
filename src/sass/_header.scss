@@ -1,0 +1,99 @@
+//header
+.header {
+    @extend %text;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #e9e9e9;
+    .topnav {
+        // border: 1px solid red;
+        .top-l {
+            div {
+                float: left;
+            }
+            div:nth-child(1) a {
+                padding-left: 20px;
+                background: url('//s.maiyaole.com/images/201306/images/common_sprite.png') no-repeat -154px -64px;
+            }
+        }
+    }
+    .top-r {
+        li {
+            float: left;
+            @extend %text;
+            background-color: #f1f1f1;
+        }
+        .logininfo {
+            a:nth-child(1) {
+                color: red;
+            }
+        }
+    }
+}
+
+.topsearch {
+    // border: 1px solid red;
+    height: 121px;
+    margin-bottom: 10px;
+    h1 {
+        margin-right: 105px;
+        .logo {
+            padding-top: 26px;
+            text-indent: -9999px;
+            a {
+                display: block;
+                width: 180px;
+                height: 87px;
+                background: url('//s.maiyaole.com/images/common/logo_01.png') no-repeat center;
+            }
+        }
+    }
+    .search-wrap {
+        width: 765px;
+        height: 106px;
+        // border: 1px solid red;
+        margin-bottom: 15px;
+        position: relative;
+        .search-from {
+            width: 532px;
+            margin-top: 34px;
+            // height: 44px;
+            label {
+                position: absolute;
+                left: 0;
+                top: 34px;
+                width: 451px;
+                height: 42px;
+                display: none;
+                background-color: red;
+                border: 1px solid #c7a774;
+            }
+            .search {
+                @extend %outline;
+                width: 451px;
+                height: 44px;
+                border: 1px solid #c7a774;
+            }
+            .searchBtn {
+                @extend %outline;
+                width: 80px;
+                height: 44px;
+                border: 1px solid #c7a774;
+                background: #fff;
+                position: relative;
+                left: -1px;
+            }
+        }
+        .text {
+            margin-top: 10px;
+            li {
+                @extend %text;
+                line-height: 16px;
+                float: left;
+            }
+        }
+    }
+    .button {
+        box-sizing: border-box;
+        width: 140px;
+        border: 1px solid red;
+    }
+}
