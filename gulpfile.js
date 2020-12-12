@@ -10,7 +10,7 @@ const css = require('gulp-cssmin');
 // const es2015 = require('babel-preset-es2015'); //es6转es5主要模块
 
 //压缩
-const uglifyjs = require('gulp-uglify'); //引入压缩js的模块
+// const uglifyjs = require('gulp-uglify'); //引入压缩js的模块
 
 //监听模块
 const watch = require('gulp-watch'); //引入监听的模块。

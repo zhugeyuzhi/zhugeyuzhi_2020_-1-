@@ -1,1 +1,74 @@
-//
+/* banner */
+
+.banner {
+    .banner-l {
+        margin-left: 180px;
+    }
+    .banner-pic {
+        width: 750px;
+        height: 400px;
+    }
+    .banner-r {
+        width: 259px;
+        height: 399px;
+        border-right: 1px solid #d2b994;
+        border-bottom: 1px solid #d2b994;
+        // background-color: red;
+        .insertad {
+            img {
+                width: 234px;
+            }
+        }
+    }
+    .tabtop {
+        padding-left: 13px;
+        width: 247px;
+        height: 32px;
+        li {
+            // display: inline-block;
+            margin-left: 10px;
+            line-height: 22px;
+            color: #707070;
+            cursor: pointer;
+            padding-top: 5px;
+            text-align: center;
+            font-size: 12px;
+            &.active {
+                border-bottom: 1px solid #f00;
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+    .tabconbox {
+        // background-color: #f00;
+        height: auto;
+    }
+    .tabdiv {
+        padding-left: 23px;
+        padding-bottom: 8px;
+        overflow: hidden;
+        font-size: 13px;
+        display: none;
+        &.active {
+            display: block;
+            min-height: 110px;
+            // a {
+            //     img {
+            //         width: 100px;
+            //         height: 100px;
+            //     }
+            // }
+        }
+        a {
+            width: 72px;
+            float: left;
+            height: 25px;
+            line-height: 25px;
+            color: #707070;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

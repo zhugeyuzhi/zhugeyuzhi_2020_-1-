@@ -1,4 +1,8 @@
 @import 'public';
+@import 'header';
+@import 'banner';
+@import 'footer';
+// index
 body {
     min-width: 1200px;
 }
@@ -9,6 +13,7 @@ body {
 .wrap {
     width: 1190px;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -37,6 +42,7 @@ body {
 a {
     color: #5e5e5e;
     text-decoration: none;
+    font-family: "Microsoft YaHei";
     &:hover {
         text-decoration: underline;
         color: #0083ce;
@@ -52,6 +58,7 @@ $t_height: 36px;
     line-height: $t_height;
     color: #5e5e5e;
     padding: 0 10px;
+    text-align: center;
 }
 
 %outline {
@@ -60,6 +67,99 @@ $t_height: 36px;
     }
 }
 
-@import 'header';
-@import 'banner';
-@import 'footer';
+%sec {
+    width: 1192px;
+    height: 485px;
+    border: 1px solid #F3F3F3;
+    border-top: 2px solid #92c4ff;
+    margin: 30px auto 0;
+    font-family: "Microsoft Yahei";
+    color: #5e5e5e;
+    // border-top: none;
+    // border-bottom: none;
+}
+
+.sec {
+    @extend %sec;
+    .sec-l {
+        width: 180px;
+        // height: 485px;
+        li {
+            float: left;
+            width: 89px;
+            height: 49px;
+            border: 1px solid #F3F3F3;
+            border-left: none;
+            border-top: none;
+            text-align: center;
+            line-height: 49px;
+            font-size: 14px;
+        }
+    }
+    .sec-r {
+        float: right;
+        width: 1012px;
+    }
+    .floor_name {
+        padding-left: 20px;
+        height: 85px;
+        line-height: 85px;
+        background: #F8F8F8;
+        font-size: 20px;
+        &.active {
+            color: #fff;
+            background: #92c4ff;
+        }
+    }
+    a:hover {
+        color: #ff5247;
+    }
+    .sale {
+        height: 284px;
+        .sale-slider {
+            width: 605px;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border-right: 1px solid #f3f3f3;
+        }
+    }
+    .sp_show {
+        height: 201px;
+        li {
+            float: left;
+            width: 161px;
+            padding: 20px 20px 10px 20px;
+            border-right: 1px solid #F3F3F3;
+            border-bottom: 1px solid #F3F3F3;
+            height: 170px;
+            a {
+                display: block;
+                color: #333;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+                margin-left: 30px;
+            }
+            a.tit {
+                font-size: 14px;
+                height: 20px;
+                overflow: hidden;
+                text-align: center;
+                margin: 15px 0 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            p {
+                color: #E72418;
+                font-size: 16px;
+                text-align: center;
+                i {
+                    font-size: 12px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
