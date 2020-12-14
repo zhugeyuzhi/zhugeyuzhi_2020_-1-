@@ -136,10 +136,90 @@ table {
     border-spacing: 0;
 }
 
-input,
-textarea,
+// 
+body {
+    min-width: 1200px;
+}
+
+body,
 button,
+input,
 option,
-select {
+select,
+textarea {
     box-sizing: border-box;
+    font: 12px tahoma, arial, "Microsoft Yahei", \5b8b\4f53;
+    color: #5E5E5E;
+}
+
+
+/* 版心 */
+
+.wrap {
+    width: 1196px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* 浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::after {
+    content: '.';
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: visible;
+}
+
+a {
+    color: #5e5e5e;
+    text-decoration: none;
+    font-family: "Microsoft YaHei";
+    &:hover {
+        text-decoration: underline;
+        color: #0083ce;
+    }
+}
+
+$font12: 12px;
+$font14: 14px;
+$t_height: 36px;
+%text {
+    font-size: $font12;
+    height: $t_height;
+    line-height: $t_height;
+    color: #5e5e5e;
+    padding: 0 10px;
+    text-align: center;
+}
+
+%outline {
+    &:focus {
+        outline: none;
+    }
+}
+
+%sec {
+    width: 1196px;
+    height: 485px;
+    border: 1px solid #F3F3F3;
+    border-top: 2px solid #92c4ff;
+    margin: 30px auto 0;
+    color: #5e5e5e;
+    // font-family: "Microsoft Yahei";
+    // border-top: none;
+    // border-bottom: none;
 }

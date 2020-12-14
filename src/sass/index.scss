@@ -3,86 +3,10 @@
 @import 'banner';
 @import 'footer';
 // index
-body {
-    min-width: 1200px;
-}
-
-
-/* 版心 */
-
-.wrap {
-    width: 1190px;
-    margin: 0 auto;
-    position: relative;
-}
-
-
-/* 浮动 */
-
-.fl {
-    float: left;
-}
-
-.fr {
-    float: right;
-}
-
-
-/* 清除浮动 */
-
-.clearfix::after {
-    content: '.';
-    height: 0;
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: visible;
-}
-
-a {
-    color: #5e5e5e;
-    text-decoration: none;
-    font-family: "Microsoft YaHei";
-    &:hover {
-        text-decoration: underline;
-        color: #0083ce;
-    }
-}
-
-$font12: 12px;
-$font14: 14px;
-$t_height: 36px;
-%text {
-    font-size: $font12;
-    height: $t_height;
-    line-height: $t_height;
-    color: #5e5e5e;
-    padding: 0 10px;
-    text-align: center;
-}
-
-%outline {
-    &:focus {
-        outline: none;
-    }
-}
-
-%sec {
-    width: 1192px;
-    height: 485px;
-    border: 1px solid #F3F3F3;
-    border-top: 2px solid #92c4ff;
-    margin: 30px auto 0;
-    font-family: "Microsoft Yahei";
-    color: #5e5e5e;
-    // border-top: none;
-    // border-bottom: none;
-}
-
 .sec {
     @extend %sec;
     .sec-l {
-        width: 180px;
+        width: 182px;
         // height: 485px;
         li {
             float: left;
@@ -98,7 +22,7 @@ $t_height: 36px;
     }
     .sec-r {
         float: right;
-        width: 1012px;
+        width: 1014px;
     }
     .floor_name {
         padding-left: 20px;
@@ -122,6 +46,22 @@ $t_height: 36px;
             position: relative;
             overflow: hidden;
             border-right: 1px solid #f3f3f3;
+            .slide_img {
+                width: 605px;
+                height: 284px;
+                position: absolute;
+                left: 0;
+                z-index: 9;
+            }
+        }
+        .sale_ads {
+            img {
+                width: 201px;
+                height: 284px;
+            }
+            .last {
+                border-right: 0;
+            }
         }
     }
     .sp_show {
@@ -131,8 +71,11 @@ $t_height: 36px;
             width: 161px;
             padding: 20px 20px 10px 20px;
             border-right: 1px solid #F3F3F3;
-            border-bottom: 1px solid #F3F3F3;
+            // border-bottom: 1px solid #F3F3F3;
             height: 170px;
+            &.last {
+                border-right: none;
+            }
             a {
                 display: block;
                 color: #333;
@@ -161,5 +104,136 @@ $t_height: 36px;
                 }
             }
         }
+    }
+}
+
+// 特卖
+.specialAds {
+    width: 1204px;
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    a {
+        margin-right: 3px;
+        img {
+            width: 250px;
+            height: 150px;
+            vertical-align: top;
+        }
+    }
+    .limited_time {
+        width: 180px;
+        height: 150px;
+        float: left;
+        margin-right: 0;
+    }
+    .clock-wrap {
+        position: relative;
+        width: 180px;
+        height: 150px;
+        background: url(//s.maiyaole.com/images/201306/img/clock01.png) no-repeat;
+    }
+    .clock {
+        position: absolute;
+        left: 63px;
+        top: 32px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 6px solid transparent;
+        .clock-h {
+            position: absolute;
+            top: 5px;
+            left: 19px;
+            height: 18px;
+            width: 5px;
+            background: url(//s.maiyaole.com/images/201306/img/clock_h.png) no-repeat;
+            transform: rotate(93deg);
+            -webkit-transform: rotate(93deg);
+        }
+        .clock-m {
+            position: absolute;
+            left: 5px;
+            top: 19px;
+            width: 19px;
+            height: 5px;
+        }
+        .clock-s {
+            position: absolute;
+            left: 17px;
+            top: -6px;
+            width: 5px;
+            height: 26px;
+            -webkit-transform-origin: bottom;
+            -webkit-animation: tick-tock 10s linear infinite;
+            -moz-transform-origin: bottom;
+            -moz-animation: tick-tock 10s linear infinite;
+            transform-origin: bottom;
+            animation: tick-tock 10s linear infinite;
+        }
+    }
+}
+
+// 楼层滚动模块 css
+.elevator_n {
+    top: 159px;
+    display: block;
+    position: fixed;
+    z-index: 99;
+    right: 50%;
+    margin-right: 600px;
+    .xsg {
+        display: block;
+        width: 48px;
+        border: 1px solid #E6E6E6;
+        border-bottom: none;
+        text-align: center;
+        color: #157CDB;
+        padding: 5px 0;
+        text-decoration: none;
+        font-family: "Microsoft YaHei";
+    }
+    ul {
+        overflow: hidden;
+    }
+    li {
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        text-align: center;
+        width: 48px;
+        border: 1px solid #E6E6E6;
+        border-bottom: none;
+        background-color: #fff;
+        &.active {
+            background-color: #00f;
+        }
+        &.active>a:nth-child(1) {
+            display: none;
+        }
+        a {
+            color: #5e5e5e;
+            display: block;
+            font-family: Arial;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .etitle {
+            line-height: 17px;
+            padding: 3px 5px;
+            // 
+            color: #fff;
+            display: none;
+            font-size: 12px;
+            font-family: "Microsoft YaHei";
+            &.active {
+                display: block;
+                // margin-top: -40px;
+            }
+        }
+    }
+    .last {
+        border-bottom: 1px solid #E6E6E6;
     }
 }

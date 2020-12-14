@@ -56,10 +56,11 @@
     }
     .search-wrap {
         width: 765px;
-        height: 106px;
+        height: 114px;
         // border: 1px solid red;
         margin-bottom: 15px;
         position: relative;
+        z-index: 99;
         // background: url('//s.maiyaole.com/images/201306/images/common_sprite.png') no-repeat 0px 0px;
     }
     .search-from {
@@ -122,11 +123,14 @@
 .headermainnav {
     border-bottom: 2px solid #d2b994;
     position: relative;
+    .red {
+        color: #f00;
+    }
     .allSort {
         float: left;
         width: 180px;
         position: relative;
-        a {
+        .allSorttit {
             // width: 180px;
             line-height: 48px;
             position: absolute;
@@ -151,30 +155,101 @@
         position: absolute;
         width: 180px;
         background-color: #314349;
+        // border-bottom: 1px solid #e8e8e7;
     }
     .allSortli {
         width: 180px;
         height: 40px;
         transition: all .4s;
-        // position: absolute;
+        // position: relative;
         &:hover {
             padding-left: 10px;
-            a {
-                color: #314349;
-                background-color: #fff;
-            }
         }
-        a {
+        &:hover .category_name {
+            color: #314349;
+            background-color: #fff;
+            border-bottom: 1px solid #e8e8e7;
+        }
+        &.last.category {
+            border-bottom: none;
+        }
+        .category_name {
+            display: block;
             // width: 180px;
             height: 40px;
             line-height: 40px;
             background-color: #314349;
             text-decoration: none;
-            font-weight: 400;
+            position: relative;
+            color: #fff;
+            // 图标 TODO：：
+            i {}
+            em {
+                margin-left: 18px;
+                font-weight: 400;
+                font-size: 14px;
+            }
         }
-        i {}
-        em {
-            margin-left: 18px;
+        .category {
+            width: 1009px;
+            height: 400px;
+            z-index: 101;
+            border-bottom: 1px solid #e8e8e7;
+            border-right: 1px solid #e8e8e7;
+            display: none;
+            position: absolute;
+            left: 180px;
+            top: 0px;
+            background: #fff;
+            .mode-bd {
+                font: 12px/18px Arial, tahoma, \5b8b\4f53;
+                background: #fff;
+                vertical-align: middle;
+                width: 252px;
+                height: 399px;
+                overflow: hidden;
+                float: left;
+                &.ads {
+                    border-left: 1px solid #e8e8e7;
+                    border-right: 1px solid #e8e8e7;
+                }
+                dl {
+                    display: block;
+                    font: 12px/18px Arial, tahoma, \5b8b\4f53;
+                    background: #fff;
+                    // vertical-align: middle;
+                    float: left;
+                    margin-bottom: 13px;
+                }
+                dt {
+                    margin: 6px 0 0 23px;
+                    padding: 0;
+                    line-height: 20px;
+                    height: 20px;
+                    font-weight: 700;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                dd {
+                    color: #999;
+                    line-height: 1.6;
+                    width: 220x;
+                    margin: 0 0 0 23px;
+                    padding: 0 0 6px 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    em {
+                        margin: 8px 6px 0 -8px;
+                        padding: 1px 6px 0 7px;
+                        display: inline-block;
+                        font-style: normal;
+                        border-left: #ddd 1px solid;
+                        font-weight: 400;
+                        line-height: 1;
+                    }
+                }
+            }
         }
     }
     .sitenav {
@@ -214,8 +289,8 @@
         width: 350px;
         // margin-left: -221px;
         // margin-top: -1px;
-        top: -90px;
-        right: 0px;
+        top: 0;
+        right: 18px;
         z-index: 10000;
         // border: #e72418 1px solid;
         // border-top: #e72418 2px solid;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -88,7 +89,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -102,35 +104,240 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-input,
-textarea,
+body {
+  min-width: 1200px;
+}
+
+body,
 button,
+input,
 option,
-select {
-  box-sizing: border-box; }
+select,
+textarea {
+  box-sizing: border-box;
+  font: 12px tahoma, arial, "Microsoft Yahei", \5b8b\4f53;
+  color: #5E5E5E;
+}
+
+/* 版心 */
+.wrap {
+  width: 1196px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 浮动 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  content: '.';
+  height: 0;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: visible;
+}
+
+a {
+  color: #5e5e5e;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+}
+a:hover {
+  text-decoration: underline;
+  color: #0083ce;
+}
+
+/* footer */
+.footer .ft_commit {
+  padding-top: 36px;
+}
+.footer .ft_commit .ft_commit_con {
+  width: 1190px;
+  height: 100px;
+  margin: 0 auto;
+  background: url(//s.maiyaole.com/images/201306/images/jsyhm.png) no-repeat 0 0;
+}
+.footer .new_app_part {
+  margin-top: 60px;
+}
+.footer .new_app_part .new_app_part_ul {
+  padding-left: 110px;
+}
+.footer .new_app_part .new_app_part_ul li {
+  width: 255px;
+}
+.footer .new_app_part .new_app_part_ul li .app_part_right {
+  padding-top: 27px;
+}
+.footer .new_app_part .new_app_part_ul li .app_part_right .h2_tt {
+  font-size: 15px;
+  color: #1c1c1c;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.footer .new_app_part .new_app_part_ul img {
+  width: 94px;
+  height: 94px;
+  float: left;
+  margin-right: 12px;
+}
+.footer .new_app_part .service_part {
+  width: 250px;
+  float: right;
+  border-left: 1px solid #eee;
+  text-align: center;
+  padding: 15px 0;
+  margin-right: 50px;
+}
+.footer .new_app_part .service_part .tel {
+  font-size: 20px;
+  color: #c7a774;
+  font-weight: 700;
+}
+.footer .new_app_part .service_part .service_time {
+  color: #999;
+  line-height: 18px;
+  padding-top: 8px;
+}
+.footer .new_page_footer {
+  background: #f0f0f0;
+  margin-top: 65px;
+  padding-top: 45px;
+}
+.footer .new_page_footer_con {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer .footer_bottom_unit {
+  position: relative;
+  padding-left: 215px;
+  padding-top: 15px;
+}
+.footer .footer_bottom_unit .footer_logo_img {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.footer .footer_bottom_unit .help_part {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+.footer .footer_bottom_unit .help_part dl {
+  width: 155px;
+  float: left;
+}
+.footer .footer_bottom_unit .help_part dl dt {
+  font-weight: bold;
+  color: #1c1c1c;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.footer .footer_bottom_unit .help_part dl dd {
+  line-height: 26px;
+}
+.footer .footer_bottom_unit .help_part dl dd a {
+  color: #666;
+}
+.footer .footer_bottom_unit .help_part .first_dl {
+  width: 155px;
+  float: left;
+}
+.footer .footer_bottom_unit .footer_logo_img {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.footer .footer_bottom_unit .copy_right {
+  color: #5e5e5e;
+  text-align: center;
+  padding: 5px 0 30px;
+}
+.footer .yyw_member {
+  overflow: hidden;
+  padding-top: 25px;
+}
+.footer .yyw_member .member_mark {
+  color: #666;
+  float: left;
+  line-height: 56px;
+}
+.footer .yyw_member .member_ul {
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  margin-left: 15px;
+}
+.footer .yyw_member .member_ul li {
+  width: 270px;
+  float: left;
+  line-height: 56px;
+}
+.footer .yyw_member .member_ul img {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.footer .bottom_link {
+  text-align: left;
+  line-height: 30px;
+  padding-top: 30px;
+  margin-left: -20px;
+}
+.footer .bottom_link a {
+  margin: 0 20px;
+}
+.footer .copy_info {
+  text-align: left;
+  color: #999;
+  line-height: 20px;
+  padding-top: 15px;
+}
+.footer .sf_verify {
+  overflow: hidden;
+  margin-left: -10px;
+}
 
 /*# sourceMappingURL=login.css.map */
