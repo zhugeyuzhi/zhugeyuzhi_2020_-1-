@@ -64,8 +64,9 @@ define([], function() {
             $('.last').on('click', function() {
                 $('html').animate({
                     scrollTop: 0
-                })
-            })
+                });
+            });
+
 
         }
     }

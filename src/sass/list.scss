@@ -1,0 +1,254 @@
+@import 'public';
+@import 'header';
+@import 'footer';
+// 
+.list_lable_self {
+    float: left;
+    margin-right: 6px;
+    font-family: 华文黑体;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    width: 32px;
+    height: 18px;
+    background: /*#5dc3f1*/
+    url(//s.maiyaole.com/images/common/activity/sale_self_ico.png);
+    color: #fff;
+    border-radius: 1px;
+    background-size: 32px 18px;
+}
+
+.goldseller_name {
+    height: 20px;
+    width: 110px;
+    color: #5E5E5E;
+    display: inline-block;
+    line-height: 20px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    margin-left: 0;
+    top: 5px;
+}
+
+// 
+.headermainnav {
+    .allSortul {
+        display: none;
+        z-index: 10;
+    }
+}
+
+.headersearch {
+    .search {
+        margin: 0;
+        text-align: left;
+        padding: 0 0 0 10px;
+    }
+}
+
+// list
+.sec-list {
+    // height: 1000px;
+    margin-bottom: 50px;
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    .searchColMain {
+        width: 1000px;
+    }
+    .itemSearchResult {
+        li {
+            float: left;
+            margin: 4px 11px 10px 0;
+            height: 442px;
+            position: relative;
+            width: 234px;
+            button {
+                width: 78px;
+                height: 26px;
+                margin-right: 5px;
+                border: 0;
+                background-position: 0 0;
+                line-height: 1.2;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+        }
+    }
+    .itemSearchList {
+        margin-right: -13px;
+        position: relative;
+        li {
+            padding: 0px 4px;
+            // transition: all .4s;
+            .browse {
+                width: 82px;
+                text-align: center;
+                height: 14px;
+                margin-top: 6px;
+            }
+            &:hover {
+                z-index: 10;
+            }
+            &:hover .productName {
+                height: auto;
+                overflow: auto;
+            }
+        }
+        .comment {
+            color: #5e5e5e;
+            height: 20px;
+            line-height: 20px;
+            clear: both;
+            a {
+                float: left;
+                padding-right: 20px;
+            }
+        }
+        .comment_right {
+            float: right;
+            margin-top: 5px;
+            a {
+                color: #9d9d9d;
+            }
+        }
+        .self_name {
+            background: url(//s.maiyaole.com/images/201306/images/searchList/search_zan.png) no-repeat 0 50%;
+            padding-left: 18px;
+            width: auto;
+        }
+    }
+    .itemSearchResultCon {
+        position: relative;
+        z-index: 0;
+        width: 200px;
+        padding: 7px 14px 10px 14px;
+        border: 3px solid #fff;
+        background-color: #fff;
+        &:hover {
+            border: 3px solid #eaeaea;
+            background-color: #fff;
+        }
+    }
+    .pro_img {
+        display: block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin-top: 40px;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            // width: 205px;
+            // height: 188px;
+        }
+    }
+    .titleBox {
+        overflow: hidden;
+        zoom: 1;
+    }
+    .productName {
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        transition: all .4s;
+    }
+    .promoTitle {
+        display: block;
+        height: 20px;
+        line-height: 16px;
+        overflow: hidden;
+        color: #e54948;
+    }
+    p.price {
+        position: relative;
+        padding: 5px 0;
+        span {
+            float: left;
+            height: 22px;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: bold;
+            color: #f00;
+            line-height: 22px;
+        }
+    }
+    .sell_type_div {
+        padding-bottom: 6px;
+        overflow: hidden;
+        clear: both;
+    }
+    .search_list_op {
+        height: 28px;
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+        padding: 0 5px;
+        outline: none;
+        // 
+        .border_left {
+            border-left: 1px solid #e5e5e5;
+        }
+        input.search_list_reduce_gray {
+            border: 0;
+            background: url(//s.maiyaole.com/images/201306/images/global/listIcon.png) no-repeat;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 2px;
+            background-position: -1px -1px;
+            margin-top: 4px;
+            width: 19px;
+            height: 19px;
+        }
+        input.num {
+            margin-top: 4px;
+            border-top: none;
+            border-bottom: none;
+            width: 30px;
+            height: 14px;
+            line-height: 19px;
+            border: 1px solid #e6e6e6;
+            color: #262626;
+            text-align: center;
+            vertical-align: middle;
+        }
+        input.search_list_plus {
+            width: 21px;
+            height: 21px;
+            border: 0;
+            background: url(//s.maiyaole.com/images/201306/images/global/listIcon.png) no-repeat;
+            vertical-align: middle;
+            cursor: pointer;
+            margin: 0 7px 0 2px;
+            background-position: -24px -24px;
+            margin-top: 4px;
+            width: 19px;
+            height: 19px;
+        }
+        .op_right_btn {
+            padding-left: 26px;
+            width: 88px;
+            float: right;
+            height: 28px;
+            background-color: #fff;
+            color: #ff6666;
+            background-repeat: no-repeat;
+            background-size: 15px 15px;
+        }
+        .add_cart_btn {
+            background-image: url(//s.maiyaole.com/images/201306/images/searchList/search_cart.png);
+            background-position: 8px 50%;
+            padding-right: 0px;
+        }
+    }
+    u {
+        text-decoration: none;
+        line-height: 20px;
+        margin-left: 15px;
+    }
+}
