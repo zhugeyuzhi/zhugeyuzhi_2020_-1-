@@ -17,7 +17,7 @@ define(['pagination', 'jqlazyload'], function() {
                     $strhtml += `
                         <li>
                             <div class="itemSearchResultCon">
-                                <a href="${value.url}" class="product_pic pro_img">
+                                <a href="detail.html?sid=${value.sid}" class="product_pic pro_img">
                                     <img alt="${value.title}" src="${value.image}">
                                 </a>
                                 <p class="price clearfix"><span>${value.price}</span></p>
@@ -50,6 +50,8 @@ define(['pagination', 'jqlazyload'], function() {
                 $("img.lazy").lazyload({ effect: "fadeIn" });
 
                 // 默认顺序输出
+                $array_default = [];
+                $array = [];
                 $('.itemSearchList li').each(function(index, element) {
                     $array_default[index] = $(this); //排序前
                     $array[index] = $(this); //排序后
@@ -77,7 +79,7 @@ define(['pagination', 'jqlazyload'], function() {
                                 $strhtml += `
                                     <li>
                                         <div class="itemSearchResultCon">
-                                            <a href="${value.url}" class="product_pic pro_img">
+                                            <a href="detail.html?sid=${value.sid}" class="product_pic pro_img">
                                                 <img alt="${value.title}" src="${value.image}">
                                             </a>
                                             <p class="price clearfix"><span>${value.price}</span></p>
@@ -112,6 +114,8 @@ define(['pagination', 'jqlazyload'], function() {
 
 
                             // 将li元素添加到排序前的数组中。
+                            $array_default = [];
+                            $array = [];
                             $('.itemSearchList li').each(function(index, element) { //element:原生的元素对象
                                 $array_default[index] = $(this); //排序前
                                 $array[index] = $(this); //排序后

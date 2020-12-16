@@ -198,6 +198,14 @@ a:hover {
   outline: none;
 }
 
+.red {
+  color: #e54948 !important;
+}
+
+.a_underline {
+  text-decoration: underline;
+}
+
 /* header */
 .header {
   background-color: #f1f1f1;
@@ -300,9 +308,6 @@ a:hover {
   border-bottom: 2px solid #d2b994;
   position: relative;
 }
-.headermainnav .red {
-  color: #f00;
-}
 .headermainnav .allSort {
   float: left;
   width: 180px;
@@ -325,7 +330,6 @@ a:hover {
 .headermainnav .allSortbox {
   position: absolute;
   top: 48px;
-  height: 400px;
 }
 .headermainnav .allSortul {
   position: absolute;
@@ -657,7 +661,7 @@ a:hover {
 
 .headermainnav .allSortul {
   display: none;
-  z-index: 10;
+  z-index: 13;
 }
 
 .headersearch .search {

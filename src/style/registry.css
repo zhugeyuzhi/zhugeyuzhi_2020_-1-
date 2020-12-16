@@ -185,6 +185,14 @@ a:hover {
   color: #0083ce;
 }
 
+.red {
+  color: #e54948 !important;
+}
+
+.a_underline {
+  text-decoration: underline;
+}
+
 /* footer */
 .footer .ft_commit {
   padding-top: 36px;

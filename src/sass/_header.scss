@@ -123,9 +123,6 @@
 .headermainnav {
     border-bottom: 2px solid #d2b994;
     position: relative;
-    .red {
-        color: #f00;
-    }
     .allSort {
         float: left;
         width: 180px;
@@ -149,7 +146,8 @@
     .allSortbox {
         position: absolute;
         top: 48px;
-        height: 400px;
+        // 这个box虽然隐藏了，但是会被选中，不能给height
+        // height: 400px;
     }
     .allSortul {
         position: absolute;

@@ -16,6 +16,7 @@ define([], function() {
             let $floors = $('.floor_name');
             // console.log($floors.length);
 
+            // 滚楼楼梯事件
             function scroll() {
                 var $scrolltop = $(window).scrollTop();
                 // console.log($scrolltop);
@@ -28,13 +29,21 @@ define([], function() {
                 $floors.each(function(index, element) {
                     let $floortop = $(element).offset().top;
                     if ($floortop >= $scrolltop) {
-                        $floorli.removeClass('active');
-                        $floorli.find('a:nth-child(2)').removeClass('active');
-                        $floorli.eq(index).addClass('active');
-                        $floorli.eq(index).find('a:nth-child(2)').addClass('active');
+                        // $floorli.removeClass('active').find('a:nth-child(2)').removeClass('active');
+                        // $floors.removeClass('active');
+                        // $floorli.eq(index).addClass('active').find('a:nth-child(2)').addClass('active');
+                        // $floors.eq(index).addClass('active');
+                        floor_click(index);
                         return false;
                     }
                 });
+            }
+
+            function floor_click(index) {
+                $floorli.removeClass('active').find('a:nth-child(2)').removeClass('active');
+                $floors.removeClass('active');
+                $floorli.eq(index).addClass('active').find('a:nth-child(2)').addClass('active');
+                $floors.eq(index).addClass('active');
             }
             scroll();
             $(window).on('scroll', function() {
@@ -46,19 +55,22 @@ define([], function() {
                 $(window).off('scroll');
                 // $(this).addClass('active').siblings('li').removeClass('active');
 
-                $floorli.removeClass('active');
-                $floorli.find('a:nth-child(2)').removeClass('active');
-                $floorli.eq($(this).index()).addClass('active');
-                $floorli.eq($(this).index()).find('a:nth-child(2)').addClass('active');
-                // console.log($(this).index());
+                // 
+                // $floorli.removeClass('active').find('a:nth-child(2)').removeClass('active');
+                // $floors.removeClass('active');
+                // $floorli.eq($(this).index()).addClass('active').find('a:nth-child(2)').addClass('active');
+                // $floors.eq($(this).index()).addClass('active');
+
+
                 let $floortop = $floors.eq($(this).index()).offset().top;
-                $('html').animate({
+                $('html').stop().animate({
                     scrollTop: $floortop
-                }, function() {
+                }, 100, function() {
                     $(window).on('scroll', function() {
                         scroll();
                     });
                 });
+
             });
 
             $('.last').on('click', function() {
