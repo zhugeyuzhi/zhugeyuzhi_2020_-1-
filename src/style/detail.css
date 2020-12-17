@@ -738,6 +738,10 @@ img {
   height: 45px;
   width: 12px;
   background-position: -125px -500px;
+  background-image: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219);
+  background-repeat: no-repeat;
+  font-family: 'microsoft yahei';
+  outline: 0;
 }
 .sec-detail .detail_top .dt_scrollable {
   width: 251px;
@@ -1163,6 +1167,7 @@ img {
   display: block;
   width: 1000px;
   margin-left: 0px;
+  position: relative;
 }
 .sec-detail .detail_top ul#thumblist li {
   float: left;
@@ -1179,6 +1184,7 @@ img {
 .sec-detail .detail_top ul#thumblist li.active img {
   border: 1px solid red;
   z-index: 98;
+  left: -1px;
 }
 .sec-detail .detail_top .zoomPad {
   position: relative;

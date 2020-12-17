@@ -8,162 +8,98 @@
     <meta name="keywords" content="1药网,网上药房,网上药店,网上买药, 合法网上药房" />
     <meta name="description" content="1药网（111.com.cn），中国网上药店领导者，于2010年7月正式上线，是中国第一批获得国家食品药品监督管理局颁发的《互联网药品交易许可证》（许可证号：粤C20100001）的合法网上药店。" />
     <link rel="stylesheet" href="style/registry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
     <!-- registry -->
-    <div></div>
-
-    <!-- footer -->
-    <!-- 筛减 -->
-    <div class="footer">
-        <!--  -->
-        <div class="ft_commit">
-            <div class="ft_commit_con">
-            </div>
+    <div class="registry">
+        <div class="head">
+            <a href="index.html" class="logo">
+                <img align="middle" id="yao_logo" src="https://s.maiyaole.com/images/passport/yao_logo.png">
+            </a>
         </div>
-        <!--  -->
-        <div class="new_app_part clearfix">
-            <div class="new_app_part_con wrap">
-                <ul class="new_app_part_ul fl">
-                    <li class="fl">
-                        <img class="code_img" alt="1药网客户端二维码" src="//s.maiyaole.com/images/201306/images/td_code1.jpg">
-                        <div class="app_part_right">
-                            <h2 class="h2_tt">1药网客户端</h2>
-                            <p class="intro">APP专享价更优惠</p>
-                        </div>
-                    </li>
-                    <li class="fl">
-                        <img class="code_img" alt="1诊客户端二维码" src="//s.maiyaole.com/images/201306/images/td_code2.jpg">
-                        <div class="app_part_right">
-                            <h2 class="h2_tt">健康问答王者</h2>
-                            <p class="intro">涨知识,得奖励金</p>
-                        </div>
-                    </li>
-                    <li class="fl">
-                        <img class="code_img" alt="1药网微信公众号二维码" src="//s.maiyaole.com/images/201306/images/td_code3.jpg">
-                        <div class="app_part_right">
-                            <h2 class="h2_tt">微信公众号</h2>
-                            <p class="intro">健康资讯，科普知识</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="service_part fr">
-                    <p class="tel">400-007-0958</p>
-                    <p class="service_time">周一到周日 08:30-22:00<br>（收取市话费）</p>
+
+        <div class="wrap reg_wrap">
+            <a class="bg_link" id="2014_reg_background_a" target="_blank">&nbsp;</a>
+            <h2 class="lg_title">
+                <span class="fr">我已经注册，现在就<a href="login.html" class="blue_link">登录</a></span>Hi，欢迎注册！
+            </h2>
+            <div class="reg_form reg_form_step1">
+                <div class="reg_row ie_myemail">
+                    <input id="email" name="email" autocomplete="off" placeholder="手机号" class="form-control u_name" maxlength="100" type="text">
+                    <div id="myemail" style="display: none;"></div>
+                    <i class="i_empty" id="email_empty"></i>
+                    <i class="i_true" id="email_true"></i>
+                    <span id="email_error"></span>
                 </div>
-
-            </div>
-        </div>
-        <!--  -->
-        <div class="new_page_footer">
-            <div class="new_page_footer_con">
-                <div class="footer_bottom_unit">
-                    <img class="footer_logo_img" src="//s.maiyaole.com/images/yyw_logo.png" alt="1药网">
-                    <div class="help_part">
-                        <dl class="first_dl">
-                            <dt>新手入门</dt>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073110/index.html">常见问题</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073101/index.html">新会员注册</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073106/index.html">用户登录</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073108/index.html">找回密码</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>购物指南</dt>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073113/index.html">购物流程</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073114/index.html">订单状态说明</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073111/index.html">隐私声明</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013111902/index.html">发票制度</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>配送服务</dt>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073115/index.html">范围、时间及费用</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073116/index.html">商品验货及签收</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2014022401/index.html">门店自提</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>支付方式</dt>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073117/index.html">货到付款</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073118/index.html">网上支付</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073119/index.html">银行转账</a></dd>
-                            <dd><a href="//my.111.com.cn/ucenter/invokeCoupon.action">激活优惠券</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2014101601/index.html">优惠券使用指南</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>售后服务</dt>
-                            <dd><a href="//www.111.com.cn/cmsPage/2017568464130503153116/index.html">退换货政策</a></dd>
-
-                            <dd><a href="//www.111.com.cn/cmsPage/20170882c5810503161025/index.html">退换货流程</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/20175cbd762a0503162207/index.html">退款方式和时效</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/20175082eb220503163608/index.html">售后常见问题</a></dd>
-                            <dd><a href="//www.111.com.cn/bx">正品保障</a></dd>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013073121/index.html">品牌售后</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>企业服务</dt>
-                            <dd><a href="//www.111.com.cn/cmsPage/2013112002/index.html">供应商合作</a></dd>
-                            <dd><a href="http://openadmin.111.com.cn/">供应商入口</a></dd>
-                            <dd><a href="http://popadmin.111.com.cn/jsp/admin/venderenter/index.jsp">商家入驻</a></dd>
-                        </dl>
+                <div id="capsLock_msg" class="reg_pass_capslock" style="display: none;">
+                    <i class="capsLock_msg_i"></i>
+                    <s class="capsLock_msg_s"></s> 键盘大写锁定已打开，请注意大小写
+                </div>
+                <div class="reg_row">
+                    <!-- 密码 -->
+                    <input type="password" name="user.password" placeholder="登录密码" class="form-control u_ps" id="password" maxlength="20">
+                    <i class="i_empty" id="password_empty">不能为空</i>
+                    <span id="password_tip">6-20位字符，建议由字母，数字和符号两种以上组合</span>
+                    <span id="password_error">密码不能为空</span>
+                    <i class="i_true" id="password_true"></i>
+                    <div class="box_safety" id="pswdLevel">
+                        <ul>
+                            <li>弱</li>
+                            <li>中</li>
+                            <li>强</li>
+                        </ul>
+                        安全程度
                     </div>
                 </div>
-                <div class="footer_bottom_unit">
-                    <img class="footer_logo_img" src="//s.maiyaole.com/images/yyw_jitan_logo.png" alt="岗岭集团">
-                    <div class="copy_right">
-                        <div class="yyw_member">
-                            <span class="member_mark">集团成员：</span>
-                            <ul class="member_ul">
-                                <li>
-                                    <img alt="" src="//s.maiyaole.com/images/yyw.png">
-                                    <span>B2C医药平台"1药网"</span>
-                                </li>
-                                <li>
-                                    <img alt="" src="//s.maiyaole.com/images/yz.png">
-                                    <span>互联网医院"1诊"</span>
-                                </li>
-                                <li>
-                                    <img alt="" src="//s.maiyaole.com/images/yyc.png">
-                                    <span>B2B医药平台"1药城"</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom_link">
-                            <p><a href="//gangling.111.com.cn">关于111集团</a>|<a href="//www.111.com.cn/cmsPage/2015012602/">关于1药网</a>|<a href="//mall.yaoex.com">关于1药城</a>|<a href="http://ir.111.com.cn/">Investor Relations</a>|
-                                <a href="//www.111.com.cn/cmsPage/2015012707/">诚聘英才</a>|<a href="//www.111.com.cn/cmsPage/2014022401/index.html">直营实体药房</a></p>
-                            <p>
-                                <a href="//www.111.com.cn/cmsPage/2013101401/">互联网药品信息服务资格证书</a>|
-                                <a href="//www.111.com.cn/cmsPage/2014041703/">药品经营许可证</a>|
-                                <a href="//www.111.com.cn/cmsPage/2013101407/">食品经营许可证</a>|
-                                <a href="//www.111.com.cn/cmsPage/2013101404/">营业执照</a>|
-                                <a href="//www.111.com.cn/cmsPage/2013101408/">GPS证书</a>|
-                                <a href="//www.111.com.cn/cmsPage/2015032501/">增值电信业务经营许可证ICP粤B2-20200289</a><br>
-                                <a href="//www.111.com.cn/cmsPage/20198d72dfc90705173219/index.html">第二类医疗器械备案凭证</a>|
-                                <a href="//www.111.com.cn/cmsPage/2019df5882d20723162700/index.html">医疗器械网络备案</a>|
-                                <a href="//www.111.com.cn/cmsPage/20194274cdda1210113507/index.html">网络食品交易第三方平台备案凭证</a>
-                            </p>
-                        </div>
-                        <div class="copy_info">
-                            <p>1药网网上药店，国家药监局认证通过的合法网上药店，中国医药电子商务行业的开拓者领跑者。<a href="http://www.beian.miit.gov.cn" style="color:#999">粤ICP备12015869号-1</a><br>公司名称：广东壹号大药房连锁有限公司 公司地址：广东省广州市越秀区共和西路1号2层 联系电话：020-31067218</p>
-                            <p><span>Copyright(C)2010-2019 1药网版权所有</span><span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010402000743" class="copy_ico" ></a><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010402000743" style="color:#999" >公安备案号 440104020000743</a></span></p>
-                        </div>
-                        <div class="sf_verify">
-                            <span class="v1 vl_1">GFDA</span>
-                            <a href="http://www.gdgs.gov.cn/" class="v1 vl_2">工商网监</a>
-                            <a href="http://www.gdnet110.gov.cn/" class="v1 vl_3">网络警察</a>
-                            <a href="//www.111.com.cn" class="v1 vl_4">消费维权</a>
-                            <span class="v1 vl_5">百度认证</span>
-                            <span class="v1 vl_6">GECIA</span>
-                            <a href="https://www.95516.com/" class="v1 vl_7">银联</a>
-                            <span class="v1 vl_8">支付宝</span>
-                            <a href="https://ss.knet.cn/verifyseal.dll?sn=e14021044010046102z8ky000000&amp;comefrom=trust" class="v1 vl_9">可信网站</a>
-                            <a href="http://wljg.gdgs.gov.cn/corpsrch.aspx?key=440000000026071" title="企业名称：广东壹号大药房连锁有限公司法定代表人：张扬 标识状态：已激活 粤工商备E011505000734"><img class="v1" src="//p2.maiyaole.com/img/cmsPage/2018b038e59b0919163622/gdgs.png" alt="" style="border:0;"></a>
-                        </div>
-                    </div>
+                <div class="reg_row psheight">
+                    <!-- 确认密码 -->
+                    <input type="password" disabled="disabled" name="password2" id="password2" placeholder="确认密码" class="form-control u_ps u_ps2" maxlength="20">
+                    <i class="i_true" id="password2_true" style="display: none;"></i>
+                    <span id="password2_desc"></span>
+                    <span id="password2_tip" style="display: none">请再次输入登录密码</span>
+                    <span id="password2_error"></span>
+                </div>
+                <div class="reg_row verify_box" id="vCodeDiv" style="display: none;">
+                    <input type="text" class="form-control u_verify" placeholder="验证码" id="validCode" name="validCode" maxlength="4">
+                    <i class="i_false" id="code_false" style="display: none"></i> <i class="i_true" id="code_true" style="display: none"></i>
+                    <img align="验证码" class="verifyimg" id="valid_code_pic">
+                    <a class="verifylink" href="javascript:void(0);" id="changecode">换一张</a>
+                    <span id="vcd_desc" class="error"></span>
+                </div>
+                <div class="reg_row verify_box" id="phoneCodeDiv" style="display: none;">
+                    <input type="text" style="width:160px" class="form-control u_verify" placeholder="短信验证" id="verifyCode" name="verifyCode" maxlength="6">
 
+                    <i class="i_false" id="verifyCode_false" style="display: none"></i>
+                    <i class="i_true" id="verifyCode_true" style="display: none"></i>
+
+                    <a class="btn_verify" id="btnCode" href="javascript:void(0);">获取短信验证码</a>
+                    <span id="msgcd_desc" class="error"></span>
+                </div>
+
+                <div class="reg_row">
+                    <!-- 1药网协议-->
+                    <label class="checkbox">
+                        <span class="two_week">注册即代表您已同意1药网<a class="blue_link"  href="javascript:void(0);">《服务协议》</a>和<a class="blue_link"  href="javascript:void(0);">《隐私条款》</a></span>
+                    </label>
+                    <button type="button" class="btn btn-primary" id="registerButton">立即注册</button>
+                </div>
+                <div class="reg_row hz_login">
+                    <p>使用合作伙伴账号登录：</p>
+                    <a class="first a_yhd" href="javascript:void(0);">1号店</a>
+                    <a class="a_zfb" href="javascript:void(0);">支付宝</a>
+                    <a class="a_qq" href="javascript:void(0);">QQ</a>
+                    <a class="a_sina" href="javascript:void(0);">新浪微博</a>
+                    <a class="a_wlt" href="javascript:void(0);">万里通</a>
+                    <a class="last a_wy" href="javascript:void(0);">网易</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+
 
 </body>
 
